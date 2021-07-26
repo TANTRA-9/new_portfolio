@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.background_cover_image {
+  display: flex;
+  flex: 1;
+  background-image: url("../../Assets/Images/backgroundComputer.jpg");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.top {
+  padding-top: 16%;
+}
+
+.top h1 {
+  font-family: "Roboto", sans-serif;
+  color: rgb(170, 170, 170);
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.top h2 {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+  color: rgb(170, 170, 170);
+  margin-top: 10px;
+}

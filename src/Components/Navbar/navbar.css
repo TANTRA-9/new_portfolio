@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.back {
+  display: flex;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  flex: 1;
+  background-color: black;
+  height: 46px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigations {
+  display: flex;
+  flex-direction: row;
+}
+
+.title {
+  margin-left: 22px;
+  letter-spacing: 2px;
+  color: #66fcf1;
+}
+
+.link {
+  text-decoration: none;
+  color: #66fcf1;
+}
+
+.link :hover {
+  color: white;
+}
+
+.navigation_text {
+  margin-right: 24px;
+  letter-spacing: 2px;
+}
+
+p {
+  margin-left: 6px;
+}
