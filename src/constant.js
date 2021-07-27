@@ -5,27 +5,27 @@ import { IoMdCall } from "react-icons/io";
 export const NAVIGATORS = [
   {
     Name: "Home",
-    Route: "/",
+    Route: "#home",
     Icon: FaHome,
   },
   {
+    Name: "About",
+    Route: "#about",
+    Icon: BiCommentDetail,
+  },
+  {
     Name: "Projects",
-    Route: "/projects",
+    Route: "#projects",
     Icon: FaLaptopCode,
   },
   {
     Name: "Skills",
-    Route: "/skills",
+    Route: "#skills",
     Icon: FaBrain,
   },
   {
-    Name: "About",
-    Route: "/about",
-    Icon: BiCommentDetail,
-  },
-  {
     Name: "Contact",
-    Route: "/contact",
+    Route: "#contact",
     Icon: IoMdCall,
   },
 ];

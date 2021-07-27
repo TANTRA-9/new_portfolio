@@ -27,16 +27,16 @@
 .title {
   margin-left: 22px;
   letter-spacing: 2px;
-  color: #66fcf1;
+  color: white;
 }
 
 .link {
   text-decoration: none;
-  color: #66fcf1;
+  color: white;
 }
 
 .link :hover {
-  color: white;
+  color: #66fcf1;
 }
 
 .navigation_text {

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import { NAVIGATORS } from "../../constant";
 import { GiDoubleFaceMask } from "react-icons/gi";
 import "./navbar.css";
@@ -18,12 +17,12 @@ class Navbar extends Component {
               const { Name, Route, Icon } = data;
               return (
                 <div className="navigation_text">
-                  <Link className="link" to={Route}>
+                  <a className="link" href={Route}>
                     <div className="navigations">
                       <Icon />
                       <p>{Name}</p>
                     </div>
-                  </Link>
+                  </a>
                 </div>
               );
             })}
