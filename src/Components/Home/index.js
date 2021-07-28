@@ -8,10 +8,6 @@ import { IoIosArrowDropdownCircle } from "react-icons/io";
 import "./home.css";
 
 class Home extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   renderHomeScreen = () => {
     return (
       <div className="background_cover_image" id="home">

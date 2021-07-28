@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import meImage from "../../Assets/Images/me.jpg";
-import { FaGithub, FaHackerrank } from "react-icons/fa";
-import { GrLinkedin } from "react-icons/gr";
 import { RiDownloadCloudFill } from "react-icons/ri";
+import { ACCOUNT_LINKS } from "../../constant";
 import Resume from "../../Assets/Resume/Nishant.pdf";
 import "./index.css";
 
@@ -12,7 +11,7 @@ class About extends Component {
       <div className="about" id="about">
         <div className="about_box">
           <div>
-            <img className="image" src={meImage} />
+            <img className="image" src={meImage} alt="" />
           </div>
           <div className="about_div">
             <h1>ABOUT ME</h1>
@@ -28,27 +27,14 @@ class About extends Component {
             </p>
             <br />
             <h3>
-              <a
-                href="https://github.com/TANTRA-9"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaGithub size="35px" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/nishant-tomar-aa2b3b184"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <GrLinkedin size="33px" />
-              </a>
-              <a
-                href="https://www.hackerrank.com/TANTRA9"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaHackerrank size="34px" />
-              </a>
+              {ACCOUNT_LINKS.map((data) => {
+                const { href, target, rel, Icon } = data;
+                return (
+                  <a href={href} target={target} rel={rel}>
+                    <Icon size="35px" />
+                  </a>
+                );
+              })}
             </h3>
           </div>
         </div>
