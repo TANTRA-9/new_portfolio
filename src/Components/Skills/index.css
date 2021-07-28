@@ -1,0 +1,89 @@
+.skills {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  background: rgb(46, 46, 46);
+}
+
+.skills_image {
+  height: 60px;
+  border-radius: 50%;
+}
+
+.technical_skills {
+  padding-top: 6%;
+}
+
+.skills_box {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.skills_list {
+  display: flex;
+  flex-direction: row;
+  margin: 16px;
+  padding: 10px;
+  width: 42vw;
+  border: black grey 1px;
+  background-color: #333;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+}
+
+.skills_list div {
+  flex: 1;
+  align-self: center;
+  margin-left: 6px;
+}
+
+.skills_list div div p {
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.skill_details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 16px;
+}
+
+.percentage_outer_box {
+  background-color: #262626;
+  padding: 6px 12px 6px 0;
+  margin: 10px 12px 0 0;
+  margin-left: 10px;
+}
+
+.percentage_inner_box {
+  background-color: #00ffff;
+  height: 5px;
+}
+
+.technical_skill_title {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 2px;
+  font-size: 25px;
+  color: white;
+}
+
+.non_technical_skills {
+  padding-top: 1%;
+  color: white;
+}
+
+.non_technical_skills h1 {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 2px;
+  font-size: 25px;
+}
