@@ -13,6 +13,7 @@ import {
   FaChess,
   FaBasketballBall,
   FaMountain,
+  FaJava,
 } from "react-icons/fa";
 import {
   SiRedux,
@@ -24,7 +25,7 @@ import {
 import { BiCommentDetail } from "react-icons/bi";
 import { IoMdCall } from "react-icons/io";
 import { GrLinkedin } from "react-icons/gr";
-import { MdGames } from "react-icons/md";
+import { MdGames, MdAndroid } from "react-icons/md";
 import { GiCricketBat, GiTennisRacket } from "react-icons/gi";
 
 export const NAVIGATORS = [
@@ -149,6 +150,18 @@ export const TECHNICAL_SKILLS = [
     src: FaGithubSquare,
     hold: "80%",
     color: "grey",
+  },
+  {
+    name: "Android Development(Java)",
+    src: MdAndroid,
+    hold: "30%",
+    color: "#64D880",
+  },
+  {
+    name: "Java",
+    src: FaJava,
+    hold: "40%",
+    color: "#E64026",
   },
 ];
 
