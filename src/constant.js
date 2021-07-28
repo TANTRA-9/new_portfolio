@@ -27,6 +27,8 @@ import { IoMdCall } from "react-icons/io";
 import { GrLinkedin } from "react-icons/gr";
 import { MdGames, MdAndroid } from "react-icons/md";
 import { GiCricketBat, GiTennisRacket } from "react-icons/gi";
+import { ImGoogle2 } from "react-icons/im";
+import androidIcon from "./Assets/Images/android.jpg";
 
 export const NAVIGATORS = [
   {
@@ -74,6 +76,57 @@ export const ACCOUNT_LINKS = [
     target: "_blank",
     rel: "noopener noreferrer",
     Icon: FaHackerrank,
+  },
+];
+
+export const PROJECTS_LIST = [
+  {
+    name: "Apmah",
+    src: androidIcon,
+    projectLinks: [
+      {
+        href: "https://mega.nz/file/D9o3hAbb#hj3fHluV1qnZnDGU7gXw5l5nieh0GokUKL78pxuNgwU",
+        target: "_blank",
+        rel: "noopener noreferrer",
+        Icon: ImGoogle2,
+      },
+      {
+        href: "https://github.com/TANTRA-9/APMAH.git",
+        target: "_blank",
+        rel: "noopener noreferrer",
+        Icon: FaGithub,
+      },
+      {
+        href: "https://www.linkedin.com/in/nishant-tomar-aa2b3b184/",
+        target: "_blank",
+        rel: "noopener noreferrer",
+        Icon: GrLinkedin,
+      },
+    ],
+  },
+  {
+    name: "Apmah",
+    src: androidIcon,
+    projectLinks: [
+      {
+        href: "https://mega.nz/file/D9o3hAbb#hj3fHluV1qnZnDGU7gXw5l5nieh0GokUKL78pxuNgwU",
+        target: "_blank",
+        rel: "noopener noreferrer",
+        Icon: ImGoogle2,
+      },
+      {
+        href: "https://github.com/TANTRA-9/APMAH.git",
+        target: "_blank",
+        rel: "noopener noreferrer",
+        Icon: FaGithub,
+      },
+      {
+        href: "https://www.linkedin.com/in/nishant-tomar-aa2b3b184/",
+        target: "_blank",
+        rel: "noopener noreferrer",
+        Icon: GrLinkedin,
+      },
+    ],
   },
 ];
 
