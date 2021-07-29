@@ -76,8 +76,8 @@
     color: white;
 }
 
-.images{
-    margin: 0 40%;
+.apmah_images{
+    margin: 0 36%;
 }
 
 .links{
@@ -129,19 +129,19 @@
 }
 
 @media (max-width:1000px){
-    .images{
+    .apmah_images{
         margin: 0 36%;
     }
 }
 
 @media (max-width:750px){
-    .images{
+    .apmah_images{
         margin: 0 36%;
     }
 }
 
 @media (max-width:500px){
-    .images{
+    .apmah_images{
         margin: 0 26%;
     }
 }

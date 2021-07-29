@@ -57,7 +57,7 @@ class Apmah extends Component {
         <div className="tagBox">
           <h2 style={{ marginBottom: "40px" }}>Project Images</h2>
         </div>
-        <div className="images">
+        <div className="apmah_images">
           <Carousel>
             <Carousel.Item interval={2500}>
               <img className="d-block w-100" src={img1} alt="First slide" />

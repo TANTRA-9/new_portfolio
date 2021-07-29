@@ -275,7 +275,7 @@ export const CONTACTS = [
   },
   {
     name: "Gmail",
-    detail: "nishanttomar00009@gmail.com",
+    detail: `nishanttomar00009@gmail.com`,
     Icon: MdEmail,
     color: "#F4B631",
   },
