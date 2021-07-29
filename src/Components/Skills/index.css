@@ -62,7 +62,6 @@
 }
 
 .percentage_inner_box {
-  background-color: #00ffff;
   height: 5px;
 }
 
@@ -78,4 +77,13 @@
   padding-top: 6%;
   padding-bottom: 6%;
   color: white;
+}
+
+@media (max-width: 600px) {
+  .skills_list {
+    width: 82vw;
+  }
+  .skill_title {
+    margin-top: 8%;
+  }
 }

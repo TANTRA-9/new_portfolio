@@ -17,7 +17,7 @@
   background-image: url("../../Assets/Images/backgroundComputer.jpg");
   background-size: cover;
   justify-content: center;
-  align-items: flex-start;
+  align-items: flex-end;
   background-position: center center;
   background-repeat: no-repeat;
   height: 100vh;
@@ -25,13 +25,13 @@
 }
 
 .home_text {
-  padding-top: 40%;
+  padding-bottom: 26px;
 }
 
 .home_text h1 {
   font-family: "Roboto", sans-serif;
   color: rgb(170, 170, 170);
-  font-size: 3vw;
+  font-size: 46px;
   letter-spacing: 4px;
   text-align: center;
 }
@@ -40,7 +40,7 @@
   font-family: "Roboto", sans-serif;
   text-align: center;
   letter-spacing: 1px;
-  font-size: 2vw;
+  font-size: 30px;
   margin-top: 10px;
 }
 
@@ -52,4 +52,10 @@
   color: #66fcf1;
   cursor: pointer;
   padding-top: 2px;
+}
+
+@media (max-width: 600px) {
+  .home_text h1 {
+    font-size: 30px;
+  }
 }

@@ -1,50 +1,81 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   font-family: "Montserrat", sans-serif;
 }
 
-.back {
-  display: flex;
-  position: fixed;
-  width: 100%;
-  z-index: 9;
-}
-
-.navbar {
-  display: flex;
-  flex: 1;
+.nav {
   background-color: black;
-  height: 46px;
-  align-items: center;
-  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
 }
 
-.navigations {
-  display: flex;
-  flex-direction: row;
-}
-
-.title {
-  margin-left: 22px;
-  letter-spacing: 2px;
+.logo {
   color: white;
+  line-height: 50px;
+  letter-spacing: 3px;
+  margin-left: 10px;
 }
 
-.link {
+.list {
+  list-style: none;
+  float: right;
+  margin-right: 15px;
+  line-height: 50px;
+  z-index: 9999;
+}
+
+.list li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.list li a {
   text-decoration: none;
   color: white;
 }
 
-.link :hover {
-  color: #66fcf1;
+.list li a:hover {
+  color: #00ffff;
 }
 
-.navigation_text {
-  margin-right: 24px;
-  letter-spacing: 2px;
+.dots {
+  display: none;
 }
 
-p {
-  margin-left: 6px;
+.dots div {
+  background-color: white;
+  margin: 5px;
+  width: 23px;
+  height: 3px;
+}
+
+@media (max-width: 700px) {
+  .dots {
+    display: block;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .list {
+    position: absolute;
+    left: 0;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    width: 150px;
+    transform: translateX(-100%);
+    transition: 0.3s ease-in-out;
+  }
+
+  .list li {
+    margin-left: 30px;
+    margin-top: 50px;
+  }
 }
