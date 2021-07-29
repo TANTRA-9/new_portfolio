@@ -229,4 +229,7 @@ i {
   .project_description p {
     padding: 0 22px;
   }
+  .project_description {
+    width: 100%;
+  }
 }
