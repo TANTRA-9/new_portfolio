@@ -14,6 +14,8 @@ import {
   FaBasketballBall,
   FaMountain,
   FaJava,
+  FaPhoneAlt,
+  FaMapMarkerAlt,
 } from "react-icons/fa";
 import {
   SiRedux,
@@ -25,7 +27,7 @@ import {
 import { BiCommentDetail } from "react-icons/bi";
 import { IoMdCall } from "react-icons/io";
 import { GrLinkedin } from "react-icons/gr";
-import { MdGames, MdAndroid } from "react-icons/md";
+import { MdGames, MdAndroid, MdEmail } from "react-icons/md";
 import { GiCricketBat, GiTennisRacket } from "react-icons/gi";
 import { ImGoogle2 } from "react-icons/im";
 import androidIcon from "./Assets/Images/android.jpg";
@@ -261,5 +263,26 @@ export const NON_TECHNICAL_SKILLS = [
     src: GiTennisRacket,
     hold: "80%",
     color: "#E9D44D",
+  },
+];
+
+export const CONTACTS = [
+  {
+    name: "Phone Number",
+    detail: "+917505946613",
+    Icon: FaPhoneAlt,
+    color: "#1CA2DA",
+  },
+  {
+    name: "Gmail",
+    detail: "nishanttomar00009@gmail.com",
+    Icon: MdEmail,
+    color: "#F4B631",
+  },
+  {
+    name: "Address",
+    detail: "Paonta Sahib, Himachal Pardesh, India",
+    Icon: FaMapMarkerAlt,
+    color: "#DF3E26",
   },
 ];
