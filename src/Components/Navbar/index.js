@@ -5,11 +5,11 @@ import "./index.css";
 
 class Navbar extends Component {
   state = {
-    check: false,
+    isSideBarActive: false,
   };
 
   show = () => {
-    this.setState({ check: !this.state.check });
+    this.setState({ isSideBarActive: !this.state.isSideBarActive });
   };
 
   render() {
@@ -22,7 +22,7 @@ class Navbar extends Component {
           <ul
             className="list"
             style={{
-              transform: this.state.check ? "translateX(0)" : null,
+              transform: this.state.isSideBarActive ? "translateX(0)" : null,
               backgroundColor: this.props.navBackColor,
             }}
           >
