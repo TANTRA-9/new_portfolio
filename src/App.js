@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Home from "./Components/Home/index";
-import Projects from "./Components/Projects/index";
+import Apmah from "./Components/Projects/Apmah";
+import StayFit from "./Components/Projects/StayFit";
 import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 
 class App extends Component {
@@ -8,12 +9,9 @@ class App extends Component {
     return (
       <BrowserRouter>
         <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path="/projects">
-            <Projects />
-          </Route>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/projects/apmah" component={Apmah} />
+          <Route exact path="/projects/stay_fit" component={StayFit} />
           <Redirect to="/" />
         </Switch>
       </BrowserRouter>

@@ -5,13 +5,13 @@ import Project from "../Projects/index";
 import Skills from "../Skills/index";
 import Contacts from "../Contacts/index";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
-import "./home.css";
+import "./index.css";
 
 class Home extends Component {
   renderHomeScreen = () => {
     return (
       <div className="background_cover_image" id="home">
-        <div className="top">
+        <div className="home_text">
           <h1>Hello !</h1>
           <h2>
             <a href="#about">

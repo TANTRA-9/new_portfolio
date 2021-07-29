@@ -1,9 +1,5 @@
 import React, { Component } from "react";
-import androidIcon from "../../Assets/Images/android.jpg";
 import { HiArrowRight } from "react-icons/hi";
-import { ImGoogle2 } from "react-icons/im";
-import { FaGithub } from "react-icons/fa";
-import { GrLinkedin } from "react-icons/gr";
 import { PROJECTS_LIST } from "../../constant";
 import "./index.css";
 
@@ -13,36 +9,45 @@ class Projects extends Component {
   render() {
     return (
       <div className="project" id="projects">
+        <h1 className="page_titile">Projects</h1>
         {PROJECTS_LIST.map((data, index) => {
-          const { name, src, projectLinks } = data;
+          const { name, description, src, projectLinks, componentLink } = data;
           return (
             <div
               className="project_card"
               style={{ flexDirection: index % 2 === 0 ? "row" : "row-reverse" }}
             >
-              <h1>{name}</h1>
+              <div className="project_description">
+                <h1>{name}</h1>
+                <p>{description}</p>
+              </div>
               <div class="container">
                 <div class="card">
                   <div class="face face1">
                     <div class="content">
                       <div class="icon">
-                        <img src={src} alt="" />
+                        <img src={src} alt="" className="project_image" />
                       </div>
                     </div>
                   </div>
                   <div class="face face2">
                     <div class="content">
-                      <h5>
-                        <a href="/projects/apmah">
+                      <h4 className="detail_link">
+                        <a href={componentLink}>
                           Project Detail <HiArrowRight />
                         </a>
-                      </h5>
+                      </h4>
                       <div>
                         {projectLinks.map((item) => {
                           const { href, target, rel, Icon } = item;
                           return (
-                            <a href={href} target={target} rel={rel}>
-                              <Icon size="35px" />
+                            <a
+                              href={href}
+                              target={target}
+                              rel={rel}
+                              className={"project_account_links"}
+                            >
+                              <Icon className="project_icons" />
                             </a>
                           );
                         })}

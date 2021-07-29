@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { NAVIGATORS } from "../../constant";
 import { GiDoubleFaceMask } from "react-icons/gi";
-import "./navbar.css";
+import "./index.css";
 
 class Navbar extends Component {
   render() {
