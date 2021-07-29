@@ -24,11 +24,11 @@
   width: 100%;
 }
 
-.top {
+.home_text {
   padding-top: 40%;
 }
 
-.top h1 {
+.home_text h1 {
   font-family: "Roboto", sans-serif;
   color: rgb(170, 170, 170);
   font-size: 3vw;
@@ -36,7 +36,7 @@
   text-align: center;
 }
 
-.top h2 {
+.home_text h2 {
   font-family: "Roboto", sans-serif;
   text-align: center;
   letter-spacing: 1px;
@@ -44,11 +44,11 @@
   margin-top: 10px;
 }
 
-.top h2 a {
+.home_text h2 a {
   color: rgb(170, 170, 170);
 }
 
-.top h2 :hover {
+.home_text h2 :hover {
   color: #66fcf1;
   cursor: pointer;
   padding-top: 2px;

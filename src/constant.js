@@ -29,6 +29,7 @@ import { MdGames, MdAndroid } from "react-icons/md";
 import { GiCricketBat, GiTennisRacket } from "react-icons/gi";
 import { ImGoogle2 } from "react-icons/im";
 import androidIcon from "./Assets/Images/android.jpg";
+import reactjsIcon from "./Assets/Images/reactjs.png";
 
 export const NAVIGATORS = [
   {
@@ -83,6 +84,9 @@ export const PROJECTS_LIST = [
   {
     name: "Apmah",
     src: androidIcon,
+    componentLink: "/projects/apmah",
+    description:
+      "Android social dating app allow you to connect with people world wide and provides you messaging facility to chat with closer ones easily",
     projectLinks: [
       {
         href: "https://mega.nz/file/D9o3hAbb#hj3fHluV1qnZnDGU7gXw5l5nieh0GokUKL78pxuNgwU",
@@ -105,17 +109,20 @@ export const PROJECTS_LIST = [
     ],
   },
   {
-    name: "Apmah",
-    src: androidIcon,
+    name: "Stay-Fit",
+    src: reactjsIcon,
+    componentLink: "/projects/stay_fit",
+    description:
+      "This Website Helps You To Find Hospitals Near You And Fix Your Appointment Remotely",
     projectLinks: [
       {
-        href: "https://mega.nz/file/D9o3hAbb#hj3fHluV1qnZnDGU7gXw5l5nieh0GokUKL78pxuNgwU",
+        href: "https://stayfit-d84a1.web.app",
         target: "_blank",
         rel: "noopener noreferrer",
         Icon: ImGoogle2,
       },
       {
-        href: "https://github.com/TANTRA-9/APMAH.git",
+        href: "https://github.com/TANTRA-9/Stay_Fit.git",
         target: "_blank",
         rel: "noopener noreferrer",
         Icon: FaGithub,
@@ -205,7 +212,7 @@ export const TECHNICAL_SKILLS = [
     color: "grey",
   },
   {
-    name: "Android Development(Java)",
+    name: "Android Development (Java)",
     src: MdAndroid,
     hold: "30%",
     color: "#64D880",

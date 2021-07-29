@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
 .project {
   display: flex;
   flex: 1;
@@ -7,16 +9,89 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding-top: 4%;
+  padding-bottom: 8%;
+}
+
+.page_titile {
+  font-family: "Orbitron", sans-serif;
+  text-decoration: underline;
+  letter-spacing: 2px;
+  margin-top: 6%;
+  margin-bottom: 2%;
+}
+
+.project_image {
+  height: 200px;
+  width: 300px;
 }
 
 .project_card {
   display: flex;
 }
 
-.project_card h1 {
+.project_description {
   display: flex;
-  align-items: center;
-  margin: 12%;
+  flex-direction: column;
+  justify-content: center;
+  margin: 6%;
+  width: 400px;
+}
+
+.project_description h1 {
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 2px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.project_description p {
+  margin-top: 4%;
+  text-align: center;
+}
+
+.detail_link {
+  margin: 12% auto 12% 10px;
+}
+
+.detail_link a {
+  border: black solid 2px;
+  border-radius: 18px;
+  padding: 10px 32px;
+}
+
+.detail_link :hover {
+  background: black;
+  color: white;
+}
+
+.project_icons {
+  margin: 20px;
+  font-size: 32px;
+}
+
+.project_account_links:nth-child(1) {
+  color: #585858;
+}
+
+.project_account_links:nth-child(2) {
+  color: #585858;
+}
+
+.project_account_links:nth-child(3) {
+  color: #585858;
+}
+
+.project_account_links:nth-child(1) :hover {
+  color: #e64340;
+}
+
+.project_account_links:nth-child(2) :hover {
+  color: black;
+}
+
+.project_account_links:nth-child(3) :hover {
+  color: #0e76a8;
 }
 
 .container {
