@@ -14,8 +14,10 @@ class Projects extends Component {
           const { name, description, src, projectLinks, componentLink } = data;
           return (
             <div
-              className="project_card"
-              style={{ flexDirection: index % 2 === 0 ? "row" : "row-reverse" }}
+              className={
+                index % 2 === 0 ? "project_card_even" : "project_card_odd"
+              }
+              // style={{ flexDirection: index % 2 === 0 ? "row" : "row-reverse" }}
             >
               <div className="project_description">
                 <h1>{name}</h1>

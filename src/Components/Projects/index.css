@@ -3,7 +3,7 @@
 .project {
   display: flex;
   flex: 1;
-  height: 100vh;
+  height: auto;
   width: 100%;
   background-color: #f1f1f1;
   align-items: center;
@@ -26,8 +26,14 @@
   width: 300px;
 }
 
-.project_card {
+.project_card_even {
   display: flex;
+  flex-direction: row;
+}
+
+.project_card_odd {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .project_description {
@@ -208,4 +214,19 @@ i {
 .container a {
   text-decoration: none;
   color: #414141;
+}
+
+@media (max-width: 600px) {
+  .project_card_even {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .project_card_odd {
+    align-items: center;
+    flex-direction: column;
+  }
+  .project_description p {
+    padding: 0 22px;
+  }
 }

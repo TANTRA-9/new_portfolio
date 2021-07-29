@@ -4,30 +4,45 @@ import { GiDoubleFaceMask } from "react-icons/gi";
 import "./index.css";
 
 class Navbar extends Component {
+  state = {
+    check: false,
+  };
+
+  show = () => {
+    this.setState({ check: !this.state.check });
+  };
+
   render() {
     return (
-      <div className="back">
-        <div className="navbar">
-          <div className="title navigations">
-            <GiDoubleFaceMask />
-            <p>Nishant Tomar</p>
-          </div>
-          <div className="navigations">
+      <div>
+        <nav className="nav" style={{ backgroundColor: this.props.backColor }}>
+          <label className="logo">
+            <GiDoubleFaceMask /> NISHANT
+          </label>
+          <ul
+            className="list"
+            style={{
+              transform: this.state.check ? "translateX(0)" : null,
+              backgroundColor: this.props.navBackColor,
+            }}
+          >
             {NAVIGATORS.map((data) => {
               const { Name, Route, Icon } = data;
               return (
-                <div className="navigation_text">
-                  <a className="link" href={Route}>
-                    <div className="navigations">
-                      <Icon />
-                      <p>{Name}</p>
-                    </div>
+                <li>
+                  <a href={Route}>
+                    <Icon /> {Name}
                   </a>
-                </div>
+                </li>
               );
             })}
+          </ul>
+          <div className="dots" onClick={this.show}>
+            <div></div>
+            <div></div>
+            <div></div>
           </div>
-        </div>
+        </nav>
       </div>
     );
   }
