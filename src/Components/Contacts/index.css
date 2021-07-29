@@ -1,9 +1,55 @@
 .contacts {
   display: flex;
   flex: 1;
-  height: 100vh;
+  flex-direction: column;
+  height: auto;
   width: 100%;
-  background-color: green;
+  background: rgb(46, 46, 46);
   align-items: center;
   justify-content: center;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+.contacts h1 {
+  color: white;
+  letter-spacing: 2px;
+}
+
+.contacts_list {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 4%;
+  justify-content: space-around;
+}
+
+.contact_box {
+  display: flex;
+  flex-direction: row;
+  /* background-color: #f1f1f1; */
+  background-color: #333;
+  box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+  border-radius: 16px;
+  padding: 18px;
+  margin: 16px;
+}
+
+.contact_icon {
+  height: 100%;
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+.contact_text h3 {
+  letter-spacing: 1px;
+  margin-bottom: 2px;
+  color: white;
+}
+
+.contact_text h4 {
+  color: white;
+  letter-spacing: 1px;
 }
