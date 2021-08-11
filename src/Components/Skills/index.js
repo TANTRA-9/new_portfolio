@@ -42,16 +42,16 @@ class Skills extends Component {
         <h1 className="skill_title">Non Technical Skills</h1>
         <div className="skills_box">
           {NON_TECHNICAL_SKILLS.map((data) => {
-            const { name, src: SkillLogo, hold, color } = data;
+            const { name, src: SkillLogo, color } = data;
             return (
               <div className="skills_list">
                 <SkillLogo className="skills_image" color={color} />
                 <div>
                   <div className="skill_details">
-                    <p style={{ color: color }}>{name}</p>
-                    <p style={{ color: color }}>{hold}</p>
+                    <p style={{ color: color }} className="non_technical_text">{name}</p>
+                    {/* <p style={{ color: color }}>{hold}</p> */}
                   </div>
-                  <div className="percentage_outer_box">
+                  {/* <div className="percentage_outer_box">
                     <div
                       className="percentage_inner_box"
                       style={{
@@ -59,7 +59,7 @@ class Skills extends Component {
                         backgroundColor: color,
                       }}
                     ></div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             );

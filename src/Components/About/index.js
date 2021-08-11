@@ -19,9 +19,9 @@ class About extends Component {
             <p>
               I'm Nishant Tomar.
               <br />
-              I'm currently pursuing my BCA from HZU University.
+              Full Stack Software Engineer at Tripock Labs
               <br />
-              Seeking a role to enhance and explore my technical knowledge.
+              Continuously looking forward to enhance and explore my technical knowledge.
               <br />
               I'm always energetic and eager to learn new skills.
             </p>
@@ -44,9 +44,9 @@ class About extends Component {
             <RiDownloadCloudFill className="resume_download_icon" />
           </a>
         </div>
-        <p className="note">
+        {/* <p className="note">
           Need to update the about page along with the resume
-        </p>
+        </p> */}
       </div>
     );
   }

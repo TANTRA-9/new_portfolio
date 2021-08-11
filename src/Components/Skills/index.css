@@ -54,6 +54,10 @@
   margin-right: 16px;
 }
 
+.non_technical_text{
+  margin-left: 12px;
+}
+
 .percentage_outer_box {
   background-color: #262626;
   padding: 6px 12px 6px 0;
